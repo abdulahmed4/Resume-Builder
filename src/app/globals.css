@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 218 47% 17%; /* Navy blue background */
+    --foreground: 210 100% 98%; /* Light text */
+    --card: 218 47% 20%; /* Slightly lighter navy for cards */
+    --card-foreground: 210 100% 98%; /* Light text for cards */
+    --popover: 218 47% 20%; /* Same as card */
+    --popover-foreground: 210 100% 98%; /* Same as card text */
+    --primary: 220 80% 55%; /* Vibrant blue */
+    --primary-foreground: 210 40% 98%; /* Light text for primary elements */
+    --secondary: 190 90% 65%; /* Cyan gradient end */
+    --secondary-foreground: 210 40% 98%; /* Light text for secondary elements */
+    --muted: 218 30% 25%; /* Muted navy */
+    --muted-foreground: 210 40% 80%; /* Muted light text */
+    --accent: 220 80% 55%; /* Accent matches primary */
+    --accent-foreground: 210 40% 98%; /* Light text for accents */
+    --destructive: 0 65% 50%; /* Bright red for destructive actions */
+    --destructive-foreground: 210 40% 98%; /* Light text for destructive actions */
+    --border: 218 30% 25%; /* Muted navy for borders */
+    --input: 218 30% 20%; /* Slightly darker navy for inputs */
+    --ring: 220 80% 55%; /* Vibrant blue for focus rings */
+    --radius: 0.75rem;
+    --chart-1: 220 70% 50%; /* Blue for charts */
+    --chart-2: 190 80% 50%; /* Cyan for charts */
+    --chart-3: 280 70% 50%; /* Purple for charts */
+    --chart-4: 50 80% 60%; /* Yellow for charts */
+    --chart-5: 340 70% 50%; /* Pink for charts */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%; /* Dark navy background */
+    --foreground: 210 40% 98%; /* Light text for dark mode */
+    --card: 222.2 84% 6%; /* Slightly lighter navy for cards in dark mode */
+    --card-foreground: 210 40% 98%; /* Light text for cards */
+    --popover: 222.2 84% 6%; /* Same as card for dark mode */
+    --popover-foreground: 210 40% 98%; /* Same as card text */
+    --primary: 217.2 91.2% 59.8%; /* Slightly brighter blue for dark mode */
+    --primary-foreground: 222.2 47.4% 11.2%; /* Darker text for primary elements */
+    --secondary: 190 90% 65%; /* Cyan for secondary elements */
+    --secondary-foreground: 210 40% 98%; /* Light text for secondary elements */
+    --muted: 217.2 32.6% 17.5%; /* Muted dark navy */
+    --muted-foreground: 215 20.2% 65.1%; /* Muted light text */
+    --accent: 217.2 91.2% 59.8%; /* Accent matches primary in dark mode */
+    --accent-foreground: 210 40% 98%; /* Light text for accents */
+    --destructive: 0 62.8% 30.6%; /* Muted red for destructive actions */
+    --destructive-foreground: 210 40% 98%; /* Light text for destructive actions */
+    --border: 217.2 32.6% 17.5%; /* Muted dark navy for borders */
+    --input: 217.2 32.6% 17.5%; /* Darker navy for inputs */
+    --ring: 224.3 76.3% 48%; /* Brighter blue for focus rings */
+    --chart-1: 220 70% 50%; /* Blue for charts */
+    --chart-2: 190 80% 50%; /* Cyan for charts */
+    --chart-3: 280 70% 50%; /* Purple for charts */
+    --chart-4: 50 80% 60%; /* Yellow for charts */
+    --chart-5: 340 70% 50%; /* Pink for charts */
+  }
+}
+
+@media print {
+  #resumePreviewContent {
+    zoom: 1 !important;
+    padding: 0;
+  }
+}
+
+#resumePreviewContent {
+  font-family: Inter, sans-serif;
+}
+
+@page {
+  size: A4;
+  margin: 0.6cm;
+}
